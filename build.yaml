@@ -1,0 +1,13 @@
+builders:
+  i18next_code_gen:
+    import: "package:i18next_code_gen/i18next_code_gen.dart"
+    builder_factories: ["i18NextCodeGenFactory"]
+    build_extensions:
+      "$lib$": ["g.dart"]
+    build_to: source
+    auto_apply: root_package
+    defaults:
+      options:
+        localizations: lib/i18next/en-US/*.json
+        out: lib/i18n/localizations.i18n.dart
+        flutter: true

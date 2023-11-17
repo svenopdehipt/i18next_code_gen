@@ -1,0 +1,15 @@
+{
+  "test": "Test",
+  "testInterpolation": "Test {{test}}",
+  "testInterpolationNested": "Test {{test.test}} {{test.test2}}",
+  "testFormatted": "test {{test, uppercase}}",
+  "testNestedKey": "test $t(example:test)",
+  "testCount": "test {{count}} item",
+  "testCount_plural": "test {{count}} items",
+  "testCountInterpolation": "test {{count}} {{test}}",
+  "testCountInterpolation_plural": "test {{count}} {{test}}s",
+  "testNestedOuter": {
+      "testNestedInner": "Test nested"
+  },
+  "testNestedKeyInterpolation": "test nested $t(example:testNestedOuter.testNestedInner) {{test}}"
+}

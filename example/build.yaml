@@ -1,0 +1,6 @@
+targets:
+  $default:
+    builders:
+      i18next_code_gen:
+        options:
+          localizations: lib/i18n/en-US/*.json
