@@ -122,7 +122,7 @@ class I18NextCodeGen implements Builder {
     superClass.methods.add(Method((final fb) {
       var params = value.split('{{').sublist(1)
         .map((final e) => e.split('}}').first);
-      
+
       final dateParams = params.where((final e) => !e.contains('.') && e.contains('datetime'))
         .map((final e) => e.split(',').first);
 
@@ -231,13 +231,13 @@ class I18NextCodeGen implements Builder {
             ..constant = true
             ..name = constructorName
             ..requiredParameters.addAll([
-              Parameter((final pb) => {
-                pb.toThis = true,
-                pb.name = 'i18next',
+              Parameter((final pb) {
+                pb.toThis = true;
+                pb.name = 'i18next';
               },),
-              Parameter((final pb) => {
-                pb.toThis = true,
-                pb.name = 'context',
+              Parameter((final pb) {
+                pb.toThis = true;
+                pb.name = 'context';
               },),
             ]),
         ),

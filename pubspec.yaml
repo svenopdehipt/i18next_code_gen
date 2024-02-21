@@ -1,6 +1,6 @@
 name: i18next_code_gen
-description: The dart class generator from i18next resource file
-version: 1.0.0
+description: Provide a type safe api when accessing the localization by generating dart files from i18next files
+version: 1.0.1
 repository: https://github.com/svenopdehipt/i18next_code_gen
 
 environment:
